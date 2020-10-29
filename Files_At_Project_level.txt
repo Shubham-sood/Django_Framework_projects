@@ -1,0 +1,24 @@
+Files present at Project level at Django Framework
+
+1)settings.py:
+	In this file we have to specify all our project settings and configuration like created application name
+and database configuration etc
+
+2)urls.py:
+	In this file, programmer should map every request made by the user to the specific view in the
+application.
+
+3)wsgi.py:
+	It stands for WebServer Gateway Interface.
+	In this file, we have to specify the deployment file for the cloud while hosting.
+
+4)__init__.py:
+	It is a blank file and Django Framework treats our folder as Package because this file is present 
+within our folder.
+
+5)asgi.py: 
+	It stands Asynchronous Server Gateway Interface
+
+6)Manage.py:
+	This file is the root file of the project. Using this file django supports the user to create the 
+application, generate the query, check the query and run the server.

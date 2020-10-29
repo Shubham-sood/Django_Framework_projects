@@ -1,0 +1,9 @@
+Ninth Project
+-------------
+Create a Project using Django Framework which has multiple Applications and display the msg and image based on
+view of an application that is under execution.(urls at Application)
+
+Note: If the image and style of the web page should remain same for entire project, then static folder must be
+created at Project Level.
+*Whereas If the image and style of web page keeps varying from application to application within in a project,
+then we should create static folder at Application level.

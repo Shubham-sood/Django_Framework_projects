@@ -1,0 +1,81 @@
+Fourth Project:
+---------------
+
+Create a Project using Django Framework in order to display wish msg according to the time and also the
+time in the browser by creating the template at Project Level.
+
+Client-Server Architecture Sequence Diagram
+
+Tree Structure
+--------------
+fourthproject
+	*fourthproject(Folder)
+		*asgi.py
+		*settings.py
+		*urls.py
+		*wsgi.py
+		*__init__.py
+	*manage.py(Folder)
+	*fourthapp(Folder)
+		*models.py
+		*admin.py
+		*views.py
+		*tests.py
+		*apps.py
+		*__init__.py
+		*Migrations(Folder)
+	*template(Folder)
+			*fourthapp(Folder)
+				*display.html(file)
+
+step1: create a project using the command.
+
+step2: create an Application using the command.(where manage.py file is present there you should create App)
+
+step3: Open sublime text--->click on project--->click on Add folder to project--->bring the project folder
+sublime.
+
+steps to create template folder at Project Level
+----------------------------------------------------
+click on projectname--->click on new folder and provide the name template.
+click on template folder--->click on new folder and provide the appname(fourthdapp)
+click on fourthapp folder--->click on new file and provide the name display.html
+
+step4: go to settings.py and provide the info about the app name and template.
+click on settings.py--->If you scroll down you will find a list with the name INSTALLED APPS, within this 
+list provide the appname.
+
+steps to configure template
+---------------------------
+
+click on settings.py--->If you scroll down you will find a list with the name TEMPLATES, within this list
+you have dictionary DIRS:[], now within the value part of this dictionary provide the path of template.
+
+ex:
+# Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
+
+DIRS:[BASE_DIR / 'template']
+
+
+step5: from settings control automatically goes to urls but before configuring about views, first create views.
+In views Bussiness Logic can be written in 2 ways:
+1)function based view
+2)class based view
+
+Open the views.py file and write the logic using fucntion based views.
+
+step6: Once logic is written open urls.py and configure in such a way that from urls control should go to
+views.py.
+
+Configuration in URLS(Function Based View)
+*Add an import statement
+	from appname import views
+*Add a URL to urlpatterns
+	path('',views.functionname,name='functionname')
+
+Step7: Once all this is done run the server using the command.
+
+Advantage
+----------
+Now the project is executable in any system.

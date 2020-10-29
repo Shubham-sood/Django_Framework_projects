@@ -1,0 +1,24 @@
+Sixth Project
+-------------
+
+Create a Project using Django Framework in order to display a msg, image and also the
+time in the browser by creating the template at Project Level and static folder at Project level.
+
+Seventh Project
+---------------
+
+Create a Project using Django Framework in order to display a msg based on the view that is executing.
+
+Eighth Project
+--------------
+Create a Project using Django Framework which has multiple Applications and display the msg and image based on
+view of an application that is under execution.
+
+Disadvantage:
+-------------
+3Application--->8 configurations in urls at project level
+
+100Apps---->250 configurations in urls at project level
+
+In order to overcome the above create a urls.py at application level and configure only that application
+

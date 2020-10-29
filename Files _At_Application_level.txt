@@ -1,0 +1,26 @@
+Whenever we create an application in django, it creates 6 files and one folder as shown:
+----------------------------------------------------------------------------------------
+
+1)__init__.py:
+	It is a blank file and Django Framework treats our folder as Package because this file is present 
+within our folder.
+
+2)Admin.py:
+	In this file, user has to register the models created in the application, by doing this through the
+admin GUI we can provide the data to the database.
+
+3)Apps.py: 
+	In this file, we have to specify the application specific configuration.
+
+4)Models.py:
+	In this file, the user has keep information of application specific model.
+
+5)Tests.py:
+	Here we write a code to test functionality of view.
+
+6)Views.py:
+	Here we write the Business Logic where in which we have to write the code to handle the request and
+return the response to the user.
+
+7)Migrations(Folder): 
+	This folder saves the information of database specifications related to application specific model.

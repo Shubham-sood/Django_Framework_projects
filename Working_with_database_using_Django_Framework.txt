@@ -1,0 +1,96 @@
+Steps to Install Djenario:
+--------------------------
+
+ctrl+shift+p
+
+type install package control--->click on PACKAGE CONTROL: INSTALL PACKAGE
+
+type Djenario and click on it.
+
+
+JAVA(MVC Architecture)
+----------------------
+
+M - Models(Database)
+
+V - Views (Frontend(html,css...))
+
+C - Controller (Business Logic(servlets,jsp,spring...))
+
+---> we use the above in order to achieve Standardization.
+
+PYTHON(MVT Architecture)
+
+M - Models(Database related activity)
+
+v - Views(Business Logic(python- Django..))
+
+T - Template(Frontend(html,css...))
+
+
+Create a Project using Django framework in order to create a table within a database.
+-------------------------------------------------------------------------------------
+
+Whenever we deal with database the following configuration must be performed in settings.py file.
+
+'ENGINE': 'django.db.backends.mysql',
+'NAME': 'databasename',
+'USER': 'username'
+'PASSWORD': 'password'
+'HOST': 'localhost'
+'PORT': 3306
+
+PDBC
+----
+
+connect()
+cursor()
+sql_query
+execute()
+commit()
+fetchall()
+
+Django Database Connectivity
+----------------------------
+
+Install the PACKAGE called mysqlclient
+
+cmd: pip install mysqlclient
+
+Steps to Resolve the Mysqlclient Error
+--------------------------------------
+
+*check the python version that you are using
+cmd: python --version
+	Python 3.8.2
+
+cmd: python
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 22:45:29) [MSC v.1916 32 bit (Intel)] on win32
+
+Go to google---type python uci libraries-->
+Python Extension Packages for Windows - Christoph Gohlke
+*Go to Mysqlclient
+
+Note:
+	If the python version is 3.8 and win32
+		click on-->mysqlclient‑1.4.6‑cp38‑cp38‑win32.whl
+
+	if the python version is 3.7 and win amd 64
+		click on-->mysqlclient‑1.4.6‑cp37‑cp37m‑win_amd64.whl
+
+1)Establish the connection
+--------------------------
+type the command python manage.py shell
+	*from django.db import connection
+	*my_cursor = connection.cursor()
+	*quit()--->(shell will be closed)
+
+2)Generate the sqlquery
+cmd: python manage.py makemigrations
+
+3)check the query
+cmd: python manage.py sqlmigrate appname fileno
+
+4)execute the query
+cmd: python manage.py migrate
+

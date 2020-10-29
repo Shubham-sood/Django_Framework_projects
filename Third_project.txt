@@ -1,0 +1,81 @@
+Third Project
+-------------
+
+Create a Project using Django Framework in order to display wish msg according to the time and also the
+time in the browser.
+
+Client-Server Architecture Sequence Diagram
+
+Tree Structure
+--------------
+thirdproject
+	*thirdproject(Folder)
+		*asgi.py
+		*settings.py
+		*urls.py
+		*wsgi.py
+		*__init__.py
+	*manage.py(Folder)
+	*thirdapp(Folder)
+		*models.py
+		*admin.py
+		*views.py
+		*tests.py
+		*apps.py
+		*__init__.py
+		*Migrations(Folder)
+		*template(Folder)
+			*thirdapp(Folder)
+				*display.html(file)
+
+step1: create a project using the command.
+
+step2: create an Application using the command.(where manage.py file is present there you should create App)
+
+step3: Open sublime text--->click on project--->click on Add folder to project--->bring the project folder
+sublime.
+
+steps to create template folder at Application Level
+----------------------------------------------------
+click on appname--->click on new folder and provide the name template.
+click on template folder--->click on new folder and provide the appname(thirdapp)
+click on thirdapp folder--->click on new file and provide the name display.html
+
+step4: go to settings.py and provide the info about the app name and template.
+click on settings.py--->If you scroll down you will find a list with the name INSTALLED APPS, within this 
+list provide the appname.
+
+steps to configure template
+---------------------------
+
+click on settings.py--->If you scroll down you will find a list with the name TEMPLATES, within this list
+you have dictionary DIRS:[], now within the value part of this dictionary provide the path of template.
+
+steps to find the path.
+-----------------------
+click on template--->click on find in folder--->copy the path and paste it.
+
+
+step5: from settings control automatically goes to urls but before configuring about views, first create views.
+In views Bussiness Logic can be written in 2 ways:
+1)function based view
+2)class based view
+
+Open the views.py file and write the logic using fucntion based views.
+
+step6: Once logic is written open urls.py and configure in such a way that from urls control should go to
+views.py.
+
+Configuration in URLS(Function Based View)
+*Add an import statement
+	from appname import views
+*Add a URL to urlpatterns
+	path('',views.functionname,name='functionname')
+
+Step7: Once all this is done run the server using the command.
+
+Disadvantage:
+-------------
+
+*It would not be Executing in other system Successfully.
+*In order to overcome this we have to create the Template folder at the project level and configure it.

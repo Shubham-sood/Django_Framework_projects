@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ {% load static %}
+<html>
+<head>
+	<title>BATSMEN_INFO</title>
+</head>
+<body>
+	<center>
+		<h1>THE BATSMENS DETAILS ARE:</h1>
+		<link rel="stylesheet" type="text/css" href="{% static "css/background.css" %}">
+		{% if batsmen %}
+		<table border='2'>
+				<tr>
+					<td>FIRST_NAME</td>
+					<td>LAST_NAME</td>
+					<td>COUNTRY</td>
+					<td>AGE</td>
+					<td>RUNS</td>
+					<td>AVG</td>
+					<td>RANK</td>
+					<td>PLAYED</td>
+					<td>STR</td>
+				</tr>
+
+				{% for data in batsmen %}
+				<tr>
+					<td>{{data.FIRST_NAME}}</td>
+					<td>{{data.LAST_NAME}}</td>
+					<td>{{data.COUNTRY}}</td>
+					<td>{{data.AGE}}</td>
+					<td>{{data.RUNS}}</td>
+					<td>{{data.AVG}}</td>
+					<td>{{data.RANK}}</td>
+					<td>{{data.PLAYED}}</td>
+					<td>{{data.STR}}</td>
+
+				</tr>
+					
+				{% endfor %}
+
+			</table>
+			
+		{% else %}
+		
+		<h1>RECORD ARE NOT FOUND</h1>
+			
+		{% endif %}
+		
+	</center>
+
+</body>
+</html>

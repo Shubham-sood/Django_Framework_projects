@@ -1,0 +1,35 @@
+
+Django Framework
+----------------
+
+Installation of Django
+cmd: pip install django
+
+command to check whether django has been installed properly or not.
+cmd: pip show django
+
+Project
+-------
+PROJECT = APPLICATION + CONFIGURATIONS
+
+Command to create a project
+cmd:django-admin startproject projectname
+
+Note:
+Wheneever i create a project django will automatically create one file in the name manage.py and
+a folder with the project name, in order to check that type dir in cmd prompt after getting into project.
+
+*Inside the folder which has project name there will be few configurer files automatically created.
+in order to check that type dir in cmd prompt.
+
+Command to create an Application
+--------------------------------
+cmd: python manage.py startapp appname
+Note: create the application where manage.py is present.
+
+Wheneever i create an Application django will automatically create few files and a folder with the name
+Migrations, in order to check that type dir in cmd prompt.
+
+Command to run the server
+-------------------------
+cmd: python manage.py runserver

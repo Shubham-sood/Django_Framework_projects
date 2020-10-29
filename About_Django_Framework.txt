@@ -1,0 +1,46 @@
+Frame Work:
+-----------
+Frame Work is used to develop Web Application.
+
+Web Application
+---------------
+The Application which provides services over the web are called Web Applications.
+ex: gmail.com,facebook.com.....
+
+
+Necessary Components Required to build a Web Application.
+---------------------------------------------------------
+
+In order to develop a Web Application the important components are:
+1)Front end
+2)Back end
+
+
+Front end
+---------
+Front end is nothing but the Graphical User Interface.
+The technologies req to develop Front end are:
+HTML,CSS,JAVA SCRIPT,JQUERY,BOOTSTRAP..........
+-----------------------------------------------
+
+
+Back end
+--------
+Important Components
+--------------------
+1)Language--->Java,python,php.....
+2)Framework--->(spring,mvc,struts)Java,(Django,Flask,Pyramid)Python
+3)Database--->Oracle,mysql,sqllite.............
+
+Framework
+---------
+
+Module: modules in python are a file with a .py extension. The name of the module will be the name of the file.
+	A python module can have set of functions,classes or variables defined and implemented.
+
+Package/Library: A Package is basically a directory with python files and file with the name __init__.py
+	This means a directory which contains a file name __init__.py will be treated as a package in python.
+	or
+	A Package is nothing but collection of Modules.
+
+Framework: A Framework is a collection of packages which helps in creating web application

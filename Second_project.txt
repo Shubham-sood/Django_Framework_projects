@@ -1,0 +1,25 @@
+Second Project
+--------------
+
+Create a Project using Django Framework in order to display the current time and welcome msg in the browser.
+
+Client-Server Architecture Sequence Diagram
+
+Tree Structure
+--------------
+secondproject
+	*secondproject(Folder)
+		*asgi.py
+		*settings.py
+		*urls.py
+		*wsgi.py
+		*__init__.py
+	*manage.py(Folder)
+	*secondapp(Folder)
+		*models.py
+		*admin.py
+		*views.py
+		*tests.py
+		*apps.py
+		*__init__.py
+		*Migrations(Folder)
